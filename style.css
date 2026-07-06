@@ -1,0 +1,178 @@
+:root {
+  --neutral-900: #25293a;
+  --neutral-800: #333950;
+  --neutral-500: #747b95;
+  --neutral-50: #fafafa;
+  --neutral-0: #ffffff;
+  --blue-500: #5175ff;
+  --blue-300: #829cff;
+  --blue-100: #e4eaff;
+  --red-400: #f05b5b;
+  --spacing-0: 0;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1200: 96px;
+  --spacing-1400: 112px;
+  --spacing-1600: 128px;
+  --spacing-1800: 140px;
+  --radius-0: 0;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+}
+
+.text-preset-1 {
+  font-size: 56px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.text-preset-1-tablet {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.text-preset-2 {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.text-preset-3 {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.text-preset-4 {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-preset-5 {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.text-preset-6 {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.primary-button {
+  background-color: var(--blue-500);
+  color: var(--neutral-0);
+  border-radius: var(--radius-full);
+  width: 170px;
+  height: 50px;
+  padding: var(--spacing-150) var(--spacing-500);
+  border: none;
+}
+
+.primary-button:hover {
+  background-color: var(--blue-300);
+}
+
+.primary-button:focus {
+  background-color: var(--blue-500);
+}
+
+.secondary-button {
+  background-color: var(--blue-100);
+  color: var(--blue-500);
+  border-radius: var(--radius-full);
+  width: 170px;
+  height: 50px;
+  padding: var(--spacing-150) var(--spacing-500);
+  border: none;
+}
+
+.secondary-button:hover {
+  background-color: var(--blue-500);
+  color: var(--neutral-0);
+}
+
+.secondary-button:focus {
+}
+
+.white-button {
+  background-color: var(--neutral-0);
+  color: var(--blue-500);
+  border-radius: var(--radius-full);
+  width: 170px;
+  height: 50px;
+  padding: var(--spacing-150) var(--spacing-500);
+  border: none;
+}
+
+.white-button:hover {
+  background-color: var(--blue-100);
+}
+
+.white-button:focus {
+}
+
+nav h1 {
+  color: var(--neutral-800);
+}
+
+nav p {
+  color: var(--neutral-500);
+}
+
+.plan-card h2,
+.plan-card h4,
+.plan-card h5 {
+  color: var(--neutral-900);
+}
+
+.plan-card p {
+  color: var(--neutral-500);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--neutral-0);
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}

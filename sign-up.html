@@ -1,36 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body>
-  Work smarter. Save time.
+  </head>
+  <body>
+    <div class="container">
+      <h1>Work smarter. Save time.</h1>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+      <p>
+        Easily manage your projects. Get on the list and receive in-app perks
+        available only to early subscribers. We are moving into final
+        development and getting ready for official launch soon.
+      </p>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+      <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+      <h6>Coming 4 Nov 2020</h6>
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
+      <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+      <div class="date-container dc-white">
+        <div class="date-card">47 Days</div>
+        <div class="date-card">07 Hours</div>
+        <div class="date-card">56 Min 1</div>
+        <div class="date-card">4 Sec</div>
+      </div>
 
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
-</body>
+      <div class="form-container">
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          required
+          placeholder="Name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Email Address"
+        />
+        <select name="" id="">
+          <option value="basic">Basic Pack Free</option>
+          <option value="pro">Pro Pack $9.99</option>
+          <option value="ultimate">Ultimate Pack $19.99</option>
+        </select>
+        <!-- Basic Pack Free Basic Pack Free Pro Pack $9.99 Ultimate Pack $19.99 -->
+        <input
+          type="tel"
+          name="phonenumber"
+          id="phonenumber"
+          required
+          placeholder="Phone Number"
+        />
+        <input
+          type="text"
+          name="company"
+          id="company"
+          required
+          placeholder="Company "
+        />
+        <button>Get on the list</button>
+      </div>
+    </div>
+  </body>
 </html>

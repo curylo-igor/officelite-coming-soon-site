@@ -1,53 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body> 
-  A simple solution to complex tasks is coming soon
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  Get Started
+    <link rel="stylesheet" href="style.css" />
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./assets/shared/logo.svg" alt="Officelite logo" />
+      </nav>
+      <header>
+        <img src="./assets/home/illustration-charts.svg" alt="Charts" />
+        <h1 class="text-preset-1-tablet">
+          A simple solution to complex tasks is coming soon
+        </h1>
+        <p class="text-preset-4">
+          Say goodbye to inefficient juggling of multiple apps, teams, and
+          projects. Officelite is the new collaboration platform built with an
+          intuitive interface to improve productivity.
+        </p>
+        <button
+          class="primary-button text-preset-5"
+          onclick="window.location.href = 'sign-up.html'"
+        >
+          Get Started
+        </button>
+      </header>
+      <main>
+        <div class="plan-card white-plan-card">
+          <h4 class="text-preset-2">Basic</h4>
+          <h2 class="text-preset-1">Free</h2>
+          <h5 class="text-preset-4">Up to 5 users for free</h5>
+          <p class="text-preset-4">Basic document collaboration</p>
+          <p class="text-preset-4">2 GB storage</p>
+          <p class="text-preset-4">Great security and support</p>
+          <button
+            class="secondary-button text-preset-5"
+            onclick="window.location.href = 'sign-up.html'"
+          >
+            Try for Free
+          </button>
+        </div>
 
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
+        <div class="plan-card blue-plan-card">
+          <h4 class="text-preset-2">Pro</h4>
+          <h2 class="text-preset-1">$9.99</h2>
+          <h5 class="text-preset-4">Per user, billed monthly</h5>
+          <p class="text-preset-4">All essential integrations</p>
+          <p class="text-preset-4">50 gb storage</p>
+          <p class="text-preset-4">More control and insights</p>
+          <button
+            class="white-button text-preset-5"
+            onclick="window.location.href = 'sign-up.html'"
+          >
+            Try for Free
+          </button>
+        </div>
 
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
+        <div class="plan-card white-plan-card">
+          <h4 class="text-preset-2">Ultimate</h4>
+          <h2 class="text-preset-1">$19.99</h2>
+          <h5 class="text-preset-4">Per user, billed monthly</h5>
+          <p class="text-preset-4">Robust work management</p>
+          <p class="text-preset-4">100 GB storage</p>
+          <p class="text-preset-4">VIP support</p>
+          <button
+            class="secondary-button text-preset-5"
+            onclick="window.location.href = 'sign-up.html'"
+          >
+            Try for Free
+          </button>
+        </div>
+      </main>
+      <footer>
+        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+        <h6 class="">Coming 4 Nov 2020</h6>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
-</body>
+        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+        <div class="date-container">
+          <div class="date-card">47 Days</div>
+          <div class="date-card">07 Hours</div>
+          <div class="date-card">56 Min</div>
+          <div class="date-card">14 Sec</div>
+        </div>
+        <button
+          class="primary-button text-preset-5"
+          onclick="window.location.href = 'sign-up.html'"
+        >
+          Get Started
+        </button>
+      </footer>
+    </div>
+  </body>
 </html>
