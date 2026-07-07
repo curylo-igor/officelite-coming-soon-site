@@ -24,62 +24,106 @@
   </head>
   <body>
     <div class="container">
-      <h1>Work smarter. Save time.</h1>
-
-      <p>
-        Easily manage your projects. Get on the list and receive in-app perks
-        available only to early subscribers. We are moving into final
-        development and getting ready for official launch soon.
-      </p>
-
-      <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-      <h6>Coming 4 Nov 2020</h6>
-
-      <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-      <div class="date-container dc-white">
-        <div class="date-card">47 Days</div>
-        <div class="date-card">07 Hours</div>
-        <div class="date-card">56 Min 1</div>
-        <div class="date-card">4 Sec</div>
-      </div>
-
-      <div class="form-container">
-        <input
-          type="text"
-          name="fname"
-          id="fname"
-          required
-          placeholder="Name"
+      <nav>
+        <img
+          src="./assets/shared/logo.svg"
+          alt="Officelite logo"
+          class="logo-img"
         />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          required
-          placeholder="Email Address"
-        />
-        <select name="" id="">
-          <option value="basic">Basic Pack Free</option>
-          <option value="pro">Pro Pack $9.99</option>
-          <option value="ultimate">Ultimate Pack $19.99</option>
-        </select>
-        <!-- Basic Pack Free Basic Pack Free Pro Pack $9.99 Ultimate Pack $19.99 -->
-        <input
-          type="tel"
-          name="phonenumber"
-          id="phonenumber"
-          required
-          placeholder="Phone Number"
-        />
-        <input
-          type="text"
-          name="company"
-          id="company"
-          required
-          placeholder="Company "
-        />
-        <button>Get on the list</button>
-      </div>
+      </nav>
+      <main>
+        <div class="header-content">
+          <h1 class="text-preset-1-tablet">Work smarter. Save time.</h1>
+
+          <p class="text-preset-3">
+            Easily manage your projects. Get on the list and receive in-app
+            perks available only to early subscribers. We are moving into final
+            development and getting ready for official launch soon.
+          </p>
+        </div>
+
+        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+        <h6 class="coming-date-su text-preset-6">
+          Coming <span class="blue-text">4 Nov 2020</span>
+        </h6>
+
+        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+        <div class="date-container dc-white">
+          <div class="date-card date-card-su">
+            <p class="date-number text-preset-1-tablet">47</p>
+            <p class="date-word text-preset-5">days</p>
+          </div>
+          <div class="date-card date-card-su">
+            <p class="date-number text-preset-1-tablet">07</p>
+            <p class="date-word text-preset-5">hours</p>
+          </div>
+          <div class="date-card date-card-su">
+            <p class="date-number text-preset-1-tablet">56</p>
+            <p class="date-word text-preset-5">min</p>
+          </div>
+          <div class="date-card date-card-su">
+            <p class="date-number text-preset-1-tablet">14</p>
+            <p class="date-word text-preset-5">sec</p>
+          </div>
+        </div>
+      </main>
+
+      <section>
+        <div class="form-container">
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            class="fname fc-input text-preset-4"
+            required
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="email fc-input text-preset-4"
+            required
+            placeholder="Email Address"
+          />
+          <select
+            name="Plan picker"
+            id="plan-picker"
+            class="plan-picker fc-input text-preset-5"
+          >
+            <option value="basic">
+              Basic Pack <span class="option-span">Free</span>
+            </option>
+            <option value="pro">
+              Pro Pack <span class="option-span">$9.99</span>
+            </option>
+            <option value="ultimate">
+              Ultimate Pack <span class="option-span">$19.99</span>
+            </option>
+          </select>
+          <!-- Basic Pack Free Basic Pack Free Pro Pack $9.99 Ultimate Pack $19.99 -->
+          <input
+            type="tel"
+            name="phonenumber"
+            id="phonenumber"
+            class="phonenumber fc-input text-preset-4"
+            pattern="[0-9]{9}"
+            required
+            placeholder="Phone Number"
+          />
+          <input
+            type="text"
+            name="company"
+            id="company"
+            class="company fc-input text-preset-4"
+            required
+            placeholder="Company "
+          />
+          <button class="primary-button pb-su text-preset-5">
+            Get on the list
+          </button>
+        </div>
+      </section>
     </div>
   </body>
 </html>

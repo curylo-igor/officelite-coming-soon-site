@@ -64,7 +64,7 @@
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .text-preset-4 {
@@ -174,14 +174,6 @@ body {
   text-align: center;
 }
 
-.header-content h1 {
-  color: var(--neutral-800);
-}
-
-.header-content p {
-  color: var(--neutral-500);
-}
-
 .logo-img {
   margin-top: var(--spacing-500);
   margin-bottom: var(--spacing-1000);
@@ -220,6 +212,14 @@ header::before {
   flex-direction: column;
   gap: var(--spacing-300);
   align-items: center;
+}
+
+.header-content h1 {
+  color: var(--neutral-800);
+}
+
+.header-content p {
+  color: var(--neutral-500);
 }
 
 .pricing-section {
@@ -336,6 +336,88 @@ main {
 
 footer {
   margin-bottom: var(--spacing-1400);
+}
+
+/* sign-up */
+
+.coming-date-su {
+  color: var(--neutral-800);
+  margin-top: var(--spacing-500);
+}
+
+.date-card-su {
+  background-color: var(--blue-100);
+  color: var(--blue-500);
+}
+
+.dc-white {
+  margin-bottom: var(--spacing-1000);
+}
+
+.date-card-su .date-word {
+  color: var(--neutral-800);
+}
+
+section {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    var(--neutral-900) 56%,
+    var(--neutral-0) 56%
+  );
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/home/bg-pattern-footer.svg);
+  background-position: center -50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  background-size: 300%;
+  z-index: -1;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-0);
+  margin: var(--spacing-0) var(--spacing-300) var(--spacing-1000);
+  padding: var(--spacing-500) var(--spacing-250);
+  border-radius: var(--radius-12);
+  gap: var(--spacing-300);
+  box-shadow: 0px 50px 50px 0px rgba(75, 92, 154, 0.16);
+}
+
+.fc-input {
+  height: 45px;
+  padding: var(--spacing-0) var(--spacing-200) var(--spacing-200);
+  color: var(--neutral-800);
+  border: none;
+  border-bottom: var(--neutral-500) 1px solid;
+  outline: none;
+}
+
+.plan-picker {
+  padding-left: var(--spacing-100);
+}
+
+.option-span {
+  color: var(--neutral-500);
+  opacity: 0.4;
+  margin-left: var(--spacing-200);
+}
+
+.pb-su {
+  width: 100%;
+  margin-top: var(--spacing-500);
 }
 
 @media (min-width: 768px) {
