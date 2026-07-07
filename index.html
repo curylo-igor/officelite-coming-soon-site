@@ -24,90 +24,130 @@
   </head>
   <body>
     <div class="container">
-      <nav>
-        <img src="./assets/shared/logo.svg" alt="Officelite logo" />
-      </nav>
       <header>
-        <img src="./assets/home/illustration-charts.svg" alt="Charts" />
-        <h1 class="text-preset-1-tablet">
-          A simple solution to complex tasks is coming soon
-        </h1>
-        <p class="text-preset-4">
-          Say goodbye to inefficient juggling of multiple apps, teams, and
-          projects. Officelite is the new collaboration platform built with an
-          intuitive interface to improve productivity.
-        </p>
-        <button
-          class="primary-button text-preset-5"
-          onclick="window.location.href = 'sign-up.html'"
-        >
-          Get Started
-        </button>
+        <nav>
+          <img
+            src="./assets/shared/logo.svg"
+            alt="Officelite logo"
+            class="logo-img"
+          />
+        </nav>
+
+        <img
+          src="./assets/home/illustration-charts.svg"
+          alt="Charts"
+          class="charts-img"
+        />
+
+        <div class="header-content">
+          <h1 class="text-preset-1-tablet">
+            A simple solution to complex tasks is coming soon
+          </h1>
+          <p class="text-preset-4">
+            Say goodbye to inefficient juggling of multiple apps, teams, and
+            projects. Officelite is the new collaboration platform built with an
+            intuitive interface to improve productivity.
+          </p>
+          <button
+            class="primary-button text-preset-5"
+            onclick="window.location.href = 'sign-up.html'"
+          >
+            Get Started
+          </button>
+        </div>
       </header>
-      <main>
-        <div class="plan-card white-plan-card">
-          <h4 class="text-preset-2">Basic</h4>
-          <h2 class="text-preset-1">Free</h2>
-          <h5 class="text-preset-4">Up to 5 users for free</h5>
-          <p class="text-preset-4">Basic document collaboration</p>
-          <p class="text-preset-4">2 GB storage</p>
-          <p class="text-preset-4">Great security and support</p>
+      <div class="pricing-section">
+        <main>
+          <div class="plan-card white-plan-card">
+            <div class="plan-card-pricing">
+              <h4 class="text-preset-2">Basic</h4>
+              <h2 class="text-preset-1">Free</h2>
+              <h5 class="text-preset-4">Up to 5 users for free</h5>
+            </div>
+            <div class="plan-card-features">
+              <p class="text-preset-4">Basic document collaboration</p>
+              <p class="text-preset-4">2 GB storage</p>
+              <p class="text-preset-4">Great security and support</p>
+            </div>
+            <button
+              class="secondary-button text-preset-5"
+              onclick="window.location.href = 'sign-up.html'"
+            >
+              Try for Free
+            </button>
+          </div>
+
+          <div class="plan-card blue-plan-card">
+            <div class="plan-card-pricing">
+              <h4 class="text-preset-2">Pro</h4>
+              <h2 class="text-preset-1">$9.99</h2>
+              <h5 class="text-preset-4">Per user, billed monthly</h5>
+            </div>
+            <div class="plan-card-features">
+              <p class="text-preset-4">All essential integrations</p>
+              <p class="text-preset-4">50 gb storage</p>
+              <p class="text-preset-4">More control and insights</p>
+            </div>
+            <button
+              class="white-button text-preset-5"
+              onclick="window.location.href = 'sign-up.html'"
+            >
+              Try for Free
+            </button>
+          </div>
+
+          <div class="plan-card white-plan-card">
+            <div class="plan-card-pricing">
+              <h4 class="text-preset-2">Ultimate</h4>
+              <h2 class="text-preset-1">$19.99</h2>
+              <h5 class="text-preset-4">Per user, billed monthly</h5>
+            </div>
+            <div class="plan-card-features">
+              <p class="text-preset-4">Robust work management</p>
+              <p class="text-preset-4">100 GB storage</p>
+              <p class="text-preset-4">VIP support</p>
+            </div>
+            <button
+              class="secondary-button text-preset-5"
+              onclick="window.location.href = 'sign-up.html'"
+            >
+              Try for Free
+            </button>
+          </div>
+        </main>
+        <footer>
+          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <h6 class="coming-date text-preset-6">
+            Coming <span class="blue-text">4 Nov 2020</span>
+          </h6>
+
+          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+          <div class="date-container">
+            <div class="date-card">
+              <p class="date-number text-preset-1-tablet">47</p>
+              <p class="date-word text-preset-5">days</p>
+            </div>
+            <div class="date-card">
+              <p class="date-number text-preset-1-tablet">07</p>
+              <p class="date-word text-preset-5">hours</p>
+            </div>
+            <div class="date-card">
+              <p class="date-number text-preset-1-tablet">56</p>
+              <p class="date-word text-preset-5">min</p>
+            </div>
+            <div class="date-card">
+              <p class="date-number text-preset-1-tablet">14</p>
+              <p class="date-word text-preset-5">sec</p>
+            </div>
+          </div>
           <button
-            class="secondary-button text-preset-5"
+            class="primary-button text-preset-5"
             onclick="window.location.href = 'sign-up.html'"
           >
-            Try for Free
+            Get Started
           </button>
-        </div>
-
-        <div class="plan-card blue-plan-card">
-          <h4 class="text-preset-2">Pro</h4>
-          <h2 class="text-preset-1">$9.99</h2>
-          <h5 class="text-preset-4">Per user, billed monthly</h5>
-          <p class="text-preset-4">All essential integrations</p>
-          <p class="text-preset-4">50 gb storage</p>
-          <p class="text-preset-4">More control and insights</p>
-          <button
-            class="white-button text-preset-5"
-            onclick="window.location.href = 'sign-up.html'"
-          >
-            Try for Free
-          </button>
-        </div>
-
-        <div class="plan-card white-plan-card">
-          <h4 class="text-preset-2">Ultimate</h4>
-          <h2 class="text-preset-1">$19.99</h2>
-          <h5 class="text-preset-4">Per user, billed monthly</h5>
-          <p class="text-preset-4">Robust work management</p>
-          <p class="text-preset-4">100 GB storage</p>
-          <p class="text-preset-4">VIP support</p>
-          <button
-            class="secondary-button text-preset-5"
-            onclick="window.location.href = 'sign-up.html'"
-          >
-            Try for Free
-          </button>
-        </div>
-      </main>
-      <footer>
-        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-        <h6 class="">Coming 4 Nov 2020</h6>
-
-        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-        <div class="date-container">
-          <div class="date-card">47 Days</div>
-          <div class="date-card">07 Hours</div>
-          <div class="date-card">56 Min</div>
-          <div class="date-card">14 Sec</div>
-        </div>
-        <button
-          class="primary-button text-preset-5"
-          onclick="window.location.href = 'sign-up.html'"
-        >
-          Get Started
-        </button>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
