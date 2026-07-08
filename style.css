@@ -172,6 +172,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .logo-img {
@@ -210,16 +211,21 @@ header::before {
   margin: var(--spacing-0) var(--spacing-200);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-300);
   align-items: center;
 }
 
-.header-content h1 {
-  color: var(--neutral-800);
+.header-content-text {
+  width: 343px;
 }
 
-.header-content p {
+.header-content-text h1 {
+  color: var(--neutral-800);
+  margin-bottom: var(--spacing-300);
+}
+
+.header-content-text p {
   color: var(--neutral-500);
+  margin-bottom: var(--spacing-300);
 }
 
 .pricing-section {
@@ -418,9 +424,36 @@ section::before {
 .pb-su {
   width: 100%;
   margin-top: var(--spacing-500);
+  box-shadow: none;
 }
 
 @media (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 0; */
+    width: 100%;
+    padding: 0 var(--spacing-500);
+    margin: 0;
+  }
+
+  .header-content-text {
+    width: 345px;
+    text-align: left;
+    order: -1;
+  }
+
+  .charts-img {
+    order: 1;
+    width: 280px;
+    margin: var(--spacing-200) 0;
+  }
 }
 
 @media (min-width: 1024px) {
