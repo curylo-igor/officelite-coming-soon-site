@@ -558,6 +558,58 @@ section::before {
   .date-number {
     font-size: 56px;
   }
+
+  .container-su {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-su nav {
+    margin-top: var(--spacing-800);
+    margin-bottom: var(--spacing-1000);
+  }
+
+  .main-su {
+    text-align: center;
+  }
+
+  .hc-su {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hc-su h1 {
+    color: var(--neutral-900);
+    margin-bottom: var(--spacing-300);
+  }
+
+  .hc-su p {
+    color: var(--neutral-500);
+    margin-bottom: var(--spacing-300);
+  }
+
+  .form-container {
+    padding: var(--spacing-500);
+    width: 445px;
+    margin-bottom: var(--spacing-1600);
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+      to top,
+      var(--neutral-900) 80%,
+      var(--neutral-0) 80%
+    );
+  }
+
+  section::before {
+    background-position: center -400px;
+    background-size: 225%;
+  }
+
+  /* TODO: FIX MOBILE SIGN UP */
 }
 
 @media (min-width: 1024px) {
