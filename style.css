@@ -215,7 +215,7 @@ header::before {
 }
 
 .header-content-text {
-  width: 339px;
+  max-width: 343px;
 }
 
 .header-content-text h1 {
@@ -347,6 +347,30 @@ footer {
 
 /* sign-up */
 
+.container-su {
+  text-align: center;
+}
+
+.main-su {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hc-su {
+  max-width: 343px;
+}
+
+.hc-su h1 {
+  color: var(--neutral-800);
+  margin-bottom: var(--spacing-300);
+}
+
+.hc-su p {
+  color: var(--neutral-500);
+}
+
 .coming-date-su {
   color: var(--neutral-800);
   margin-top: var(--spacing-500);
@@ -367,6 +391,7 @@ footer {
 
 section {
   width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1;
   background: linear-gradient(
@@ -374,6 +399,7 @@ section {
     var(--neutral-900) 56%,
     var(--neutral-0) 56%
   );
+  padding-bottom: var(--spacing-1000);
 }
 
 section::before {
@@ -396,7 +422,7 @@ section::before {
   display: flex;
   flex-direction: column;
   background-color: var(--neutral-0);
-  margin: var(--spacing-0) var(--spacing-300) var(--spacing-1000);
+  margin: var(--spacing-0) var(--spacing-300) 0;
   padding: var(--spacing-500) var(--spacing-250);
   border-radius: var(--radius-12);
   gap: var(--spacing-300);
@@ -444,7 +470,6 @@ section::before {
   header {
     width: 100%;
     margin-bottom: var(--spacing-1400);
-    overflow: hidden;
   }
 
   header::before {
@@ -485,11 +510,10 @@ section::before {
     width: 100%;
     padding: 0 var(--spacing-500);
     margin: 0;
-    /* gap: 64px; */
   }
 
   .header-content-text {
-    width: 345px;
+    max-width: 343px;
     text-align: left;
     order: -1;
   }
@@ -543,7 +567,6 @@ section::before {
   .plan-card-features {
     grid-column: 2/3;
     grid-row: 1/-1;
-    /* padding: var(--spacing-400) 0; */
   }
 
   .plan-card button {
@@ -559,6 +582,8 @@ section::before {
     font-size: 56px;
   }
 
+  /* sign-up  */
+
   .container-su {
     display: flex;
     flex-direction: column;
@@ -570,22 +595,27 @@ section::before {
   }
 
   .main-su {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .hc-su {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
   }
 
   .hc-su h1 {
-    color: var(--neutral-900);
-    margin-bottom: var(--spacing-300);
+    width: 540px;
   }
 
   .hc-su p {
-    color: var(--neutral-500);
-    margin-bottom: var(--spacing-300);
+    width: 540px;
   }
 
   .form-container {
@@ -602,15 +632,14 @@ section::before {
       var(--neutral-900) 80%,
       var(--neutral-0) 80%
     );
+    padding-bottom: var(--spacing-0);
   }
 
   section::before {
     background-position: center -400px;
     background-size: 225%;
   }
-
-  /* TODO: FIX MOBILE SIGN UP */
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 }
