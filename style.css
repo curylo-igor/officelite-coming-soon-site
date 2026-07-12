@@ -521,7 +521,6 @@ section::before {
   .charts-img {
     order: 1;
     width: 280px;
-    /* margin: var(--spacing-200) 0; */
     margin: 0;
     margin-top: var(--spacing-400);
   }
@@ -641,5 +640,111 @@ section::before {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
+  .text-preset-1-tablet {
+    font-size: 56px;
+  }
+
+  .text-preset-4 {
+    font-size: 18px;
+  }
+
+  header {
+    width: 1110px;
+    margin-bottom: var(--spacing-1800);
+    max-width: 100%;
+  }
+
+  nav {
+    margin-bottom: var(--spacing-1800);
+  }
+
+  .header-content {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-content-text {
+    width: 540px;
+    max-width: none;
+    text-align: left;
+  }
+
+  .charts-img {
+    width: 531px;
+    margin: 0;
+  }
+
+  .pricing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing-400);
+    margin-bottom: var(--spacing-1000);
+  }
+
+  .plan-card {
+    width: 349px;
+    height: 489px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .plan-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .blue-plan-card::before {
+    display: none;
+  }
+
+  footer {
+    width: 1110px;
+    display: grid;
+    text-align: left;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    margin-bottom: var(--spacing-1600);
+  }
+
+  footer .coming-date {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: var(--spacing-200);
+  }
+
+  footer .date-container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    gap: var(--spacing-200);
+  }
+
+  footer button {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .date-container {
+    justify-content: left;
+    margin: 0;
+  }
+
+  /* TODO: fix ::before in header and footer  */
 }
