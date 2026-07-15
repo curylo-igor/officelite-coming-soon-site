@@ -817,4 +817,6 @@ section::before {
   .pb-su {
     margin-top: var(--spacing-200);
   }
+
+  /* TODO: right side image */
 }
