@@ -695,14 +695,17 @@ section::before {
 
   .plan-card {
     width: 349px;
-    height: 489px;
+    /* height: 489px; */
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
     margin: 0;
     padding: 0;
+
+    button {
+      margin-bottom: var(--spacing-500);
+    }
   }
 
   .plan-card:last-child {
@@ -711,6 +714,27 @@ section::before {
 
   .blue-plan-card::before {
     display: none;
+  }
+
+  .plan-card-pricing {
+    margin-bottom: 0;
+    gap: 0;
+
+    h4 {
+      margin: var(--spacing-500) var(--spacing-0);
+    }
+
+    h2 {
+      margin-bottom: var(--spacing-100);
+    }
+  }
+
+  .white-plan-card .plan-card-features {
+    margin: var(--spacing-500) var(--spacing-0);
+  }
+
+  .blue-plan-card .plan-card-features {
+    margin: var(--spacing-500) var(--spacing-0);
   }
 
   footer {
