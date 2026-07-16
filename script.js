@@ -40,6 +40,7 @@ const countdownInterval = setInterval(() => {
   document.getElementById("seconds").innerText = padNumber(seconds);
 
   if (distance < 0) {
+    clearInterval(countdownInterval);
     document.getElementById("days").innerText = "00";
     document.getElementById("hours").innerText = "00";
     document.getElementById("minutes").innerText = "00";
