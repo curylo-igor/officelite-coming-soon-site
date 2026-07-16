@@ -655,6 +655,17 @@ section::before {
     max-width: 100%;
   }
 
+  header::before {
+    top: 0;
+    left: 40%;
+    width: 100%;
+    height: 100%;
+    background-position: center -350px;
+    background-size: 90%;
+    filter: brightness(1);
+    z-index: -1;
+  }
+
   nav {
     margin-left: 0;
     margin-bottom: var(--spacing-1800);
@@ -695,7 +706,6 @@ section::before {
 
   .plan-card {
     width: 349px;
-    /* height: 489px; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -772,6 +782,18 @@ section::before {
   }
 
   /* TODO: fix ::before in header and footer  */
+  .pricing-section::before {
+    top: 0;
+    left: -53%;
+    width: 150%;
+    height: 150%;
+    background-image: url(./assets/home/bg-pattern-footer.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 95%;
+    z-index: -1;
+  }
 
   /* sign-up */
 
