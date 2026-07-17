@@ -436,6 +436,17 @@ section::before {
   border: none;
   border-bottom: var(--neutral-500) 1px solid;
   outline: none;
+  cursor: pointer;
+}
+
+.fc-input:hover {
+  border-bottom: var(--blue-500) 1px solid;
+}
+
+.fc-input:focus {
+  outline: 2px solid var(--blue-500);
+  border-bottom: var(--neutral-500) 1px solid;
+  outline-offset: 2px;
 }
 
 .plan-picker {
@@ -781,7 +792,6 @@ section::before {
     margin: 0;
   }
 
-  /* TODO: fix ::before in header and footer  */
   .pricing-section::before {
     top: 0;
     left: -53%;
@@ -819,9 +829,12 @@ section::before {
     bottom: 0;
     left: 150px;
     right: -100dvh;
-
     background-color: var(--neutral-900);
     z-index: -1;
+    background-image: url(./assets/sign-up/bg-pattern-side.svg);
+    background-repeat: no-repeat;
+    background-position: -600px -650px;
+    background-size: 125%;
   }
 
   .container-su nav {
