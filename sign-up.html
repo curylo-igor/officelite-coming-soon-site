@@ -85,22 +85,39 @@
             required
             placeholder="Email Address"
           />
-          <select
-            name="Plan picker"
-            id="plan-picker"
-            class="plan-picker fc-input text-preset-5"
-          >
-            <option value="basic">
-              Basic Pack <span class="option-span">Free</span>
-            </option>
-            <option value="pro">
-              Pro Pack <span class="option-span">$9.99</span>
-            </option>
-            <option value="ultimate">
-              Ultimate Pack <span class="option-span">$19.99</span>
-            </option>
-          </select>
-          <!-- Basic Pack Free Basic Pack Free Pro Pack $9.99 Ultimate Pack $19.99 -->
+
+          <div class="custom-select-wrapper">
+            <input
+              type="hidden"
+              name="Plan picker"
+              id="plan-picker"
+              value="basic"
+            />
+
+            <div class="custom-select-trigger fc-input text-preset-5">
+              <span class="selected-text">
+                Basic Pack <span class="option-span">Free</span>
+              </span>
+              <img
+                src="./assets/sign-up/icon-arrow-down.svg"
+                alt="arrow"
+                class="select-arrow"
+              />
+            </div>
+
+            <ul class="custom-options">
+              <li class="custom-option" data-value="basic">
+                Basic Pack <span class="option-span">Free</span>
+              </li>
+              <li class="custom-option" data-value="pro">
+                Pro Pack <span class="option-span">$9.99</span>
+              </li>
+              <li class="custom-option" data-value="ultimate">
+                Ultimate Pack <span class="option-span">$19.99</span>
+              </li>
+            </ul>
+          </div>
+
           <input
             type="tel"
             name="phonenumber"

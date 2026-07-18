@@ -47,3 +47,31 @@ const countdownInterval = setInterval(() => {
     document.getElementById("seconds").innerText = "00";
   }
 }, 1000);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.querySelector(".custom-select-wrapper");
+  const trigger = document.querySelector(".custom-select-trigger");
+  const selectedText = document.querySelector(".selected-text");
+  const options = document.querySelectorAll(".custom-option");
+  const hiddenInput = document.querySelector("#plan-picker");
+
+  trigger.addEventListener("click", () => {
+    wrapper.classList.toggle("open");
+  });
+
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      selectedText.innerHTML = option.innerHTML;
+
+      hiddenInput.value = option.getAttribute("data-value");
+
+      wrapper.classList.remove("open");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!wrapper.contains(e.target)) {
+      wrapper.classList.remove("open");
+    }
+  });
+});
