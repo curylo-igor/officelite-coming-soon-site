@@ -75,3 +75,47 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nameInput = document.getElementById("fname");
+  const emailInput = document.getElementById("email");
+  const phoneInput = document.getElementById("phonenumber");
+  const companyInput = document.getElementById("company");
+
+  const nameRegex = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ\s\-]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^\d{9}$/;
+  const companyRegex = /^.{3,}$/;
+
+  function validate(input, regex) {
+    const value = input.value.trim();
+
+    if (value === "") {
+      input.classList.remove("valid", "invalid");
+      return;
+    }
+
+    if (regex.test(value)) {
+      input.classList.add("valid");
+      input.classList.remove("invalid");
+    } else {
+      input.classList.add("invalid");
+      input.classList.remove("valid");
+    }
+  }
+
+  if (nameInput)
+    nameInput.addEventListener("input", () => validate(nameInput, nameRegex));
+  if (emailInput)
+    emailInput.addEventListener("input", () =>
+      validate(emailInput, emailRegex),
+    );
+  if (phoneInput)
+    phoneInput.addEventListener("input", () =>
+      validate(phoneInput, phoneRegex),
+    );
+  if (companyInput)
+    companyInput.addEventListener("input", () =>
+      validate(companyInput, companyRegex),
+    );
+});

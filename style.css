@@ -431,12 +431,27 @@ section::before {
 
 .fc-input {
   height: 45px;
-  padding: var(--spacing-0) var(--spacing-200) var(--spacing-200);
+  padding: var(--spacing-0) var(--spacing-500) var(--spacing-200)
+    var(--spacing-200);
   color: var(--neutral-800);
   border: none;
   border-bottom: var(--neutral-500) 1px solid;
   outline: none;
   cursor: pointer;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.fc-input.valid {
+  background-image: url("./assets/sign-up/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.fc-input.invalid {
+  background-image: url("./assets/sign-up/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  border-bottom-color: var(--red-400);
 }
 
 .fc-input:hover {
@@ -478,6 +493,7 @@ section::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: var(--spacing-200);
 }
 
 .select-arrow {
@@ -493,7 +509,7 @@ section::before {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--neutral-0);
+  background-color: var(--blue-100);
   border-radius: var(--radius-8);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   list-style: none;
